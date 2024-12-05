@@ -154,3 +154,18 @@ ol, ul, li {
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
 }
+
+.formacion {
+    background-color: var(--color-de-fondo);
+    padding: 30px 10%;
+}
+
+.formacion__titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.formacion__lista {
+    display: flex;
+    justify-content: space-around;
+}
