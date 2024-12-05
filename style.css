@@ -169,3 +169,20 @@ ol, ul, li {
     display: flex;
     justify-content: space-around;
 }
+
+.formacion__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formacion__icono {
+    width: 200px; /* Ancho fijo para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para llenar el espacio respetando la proporción */
+}
+
+.formacion__detalle {
+    display: flex;
+    justify-content: center;
+}
