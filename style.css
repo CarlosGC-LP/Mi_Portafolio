@@ -179,6 +179,7 @@ ol, ul, li {
 
 .formacion__icono {
     width: 200px; /* Ancho fijo para todas las imágenes */
+    height: 135px;
     object-fit: cover; /* Ajusta la imagen para llenar el espacio respetando la proporción */
 }
 
