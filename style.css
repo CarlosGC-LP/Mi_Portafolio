@@ -214,4 +214,46 @@ ol, ul, li {
 .proyectos__informacion {
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+.proyectos__nombre {
+    padding: 25px;
+}
+
+.proyectos__botones {
+    display: flex;
+    gap: 10px;
+}
+
+.boton__repo {
+    font-size: 1.2rem; /* Tamaño del texto (ajusta según tu preferencia) */
+    padding: 1rem; /* Tamaño del botón: ajusta para hacerlo más grande o pequeño */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #007BFF; /* Letras azules */
+    border: 2px solid #007BFF; /* Borde azul */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.boton__repo:hover {
+    background-color: #007BFF; /* Fondo azul al pasar el cursor */
+    color: #ffffff; /* Letras blancas al pasar el cursor */
+}
+
+.boton__demo {
+    font-size: 1.2rem; /* Tamaño del texto (ajusta según tu preferencia) */
+    padding: 1rem; /* Tamaño del botón: ajusta para hacerlo más grande o pequeño */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #007BFF; /* Letras azules */
+    border: 2px solid #007BFF; /* Borde azul */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.boton__demo:hover {
+    background-color: #007BFF; /* Fondo azul al pasar el cursor */
+    color: #ffffff; /* Letras blancas al pasar el cursor */
 }
