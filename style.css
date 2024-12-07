@@ -189,4 +189,10 @@ ol, ul, li {
 
 .proyectos {
     background-color: var(--color-de-fondo-menu);
+    padding: 30px 10%;
+}
+
+.proyectos__titulo {
+    display: flex;
+    justify-content: center;
 }
