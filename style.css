@@ -195,9 +195,23 @@ ol, ul, li {
 .proyectos__titulo {
     display: flex;
     justify-content: center;
+    padding: 30px;
 }
 
 .proyectos__contenedor {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagen__proyecto {
+    width: 100%; /* Permite que la imagen sea adaptable */
+    max-width: 800px; /* Limita el tamaño máximo */
+    height: auto;
+}
+
+.proyectos__informacion {
+    display: flex;
+    align-items: center;
 }
