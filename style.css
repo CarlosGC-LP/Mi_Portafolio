@@ -196,3 +196,8 @@ ol, ul, li {
     display: flex;
     justify-content: center;
 }
+
+.proyectos__contenedor {
+    display: flex;
+    flex-direction: row;
+}
