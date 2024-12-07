@@ -178,12 +178,15 @@ ol, ul, li {
 }
 
 .formacion__icono {
-    width: 200px; /* Ancho fijo para todas las imágenes */
-    height: 135px;
+    width: 180px; /* Ancho fijo para todas las imágenes */
     object-fit: cover; /* Ajusta la imagen para llenar el espacio respetando la proporción */
 }
 
 .formacion__detalle {
     display: flex;
     justify-content: center;
+}
+
+.proyectos {
+    background-color: var(--color-de-fondo-menu);
 }
