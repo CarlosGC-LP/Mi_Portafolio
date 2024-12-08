@@ -326,3 +326,11 @@ ol, ul, li {
 .contacto__boton:hover {
     background-color: #0056b3;
 }
+
+.footer {
+    background-color: var(--color-de-fondo-menu);
+    padding: 30px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
