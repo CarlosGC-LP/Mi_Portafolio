@@ -204,6 +204,7 @@ ol, ul, li {
     align-items: center;
     justify-content: space-around;
     padding: 25px;
+    gap: 2rem;
 }
 
 .imagen__proyecto {
@@ -261,4 +262,38 @@ ol, ul, li {
 
 .habilidades__icono {
     height: 25px;
+}
+
+.contacto {
+    background-color: var(--color-de-fondo);
+    padding: 30px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contacto__imagen {
+    /*max-width: 300px;*/
+    height: auto;
+    border-radius: 8px;
+}
+
+.contacto__informacion {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contacto__titulo {
+    font-size: 2rem;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
