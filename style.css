@@ -257,3 +257,7 @@ ol, ul, li {
     background-color: #007BFF; /* Fondo azul al pasar el cursor */
     color: #ffffff; /* Letras blancas al pasar el cursor */
 }
+
+.habilidades__icono {
+    height: 25px;
+}
