@@ -1,11 +1,13 @@
 :root {
-    /*--color-de-fondo: #F5F5F5;
-    --color-de-fondo-menu: #ffffff;*/
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #EAF2FD;
     /*--color-de-fondo: #90A9B0;*/
-    --color-de-fondo: #80b0bd;
-    --color-de-fondo-menu: #637077a2;
+    /*--color-de-fondo: #80b0bd;
+    --color-de-fondo-menu: #637077a2;*/
+    /*--color-de-fondo: #bed361;
+    --color-de-fondo-menu: #7cc7d3;*/
     --color-de-link: #000000;
-}
+}   
 
 * {
     margin: 0;
@@ -29,44 +31,31 @@ ol, ul, li {
 /* Cabecera */
 .cabecera {
     background-color: var(--color-de-fondo-menu);
-    padding: 30px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 25px 10%;
 }
 
 .cabecera__logo {
     height: auto;
 }
 
-.navegacion__lista {
-    display: flex;
-    gap: 20px;
-}
-
-.navegacion__elemento a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+.navegacion__elemento {
+    display: none;
 }
 
 .presentacion {
     background-color: var(--color-de-fondo-menu);
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
     padding: 30px 10%;
 }
 
 .presentacion__foto {
     width: 100%; /* Permite que la imagen sea adaptable */
-    max-width: 400px; /* Limita el tamaño máximo */
+    max-width: 350px; /* Limita el tamaño máximo */
     height: auto;
     aspect-ratio: 1 / 1; /* Garantiza que siempre sea cuadrada */
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: 30px;
 }
 
 .presentacion__contenedor {
@@ -76,16 +65,16 @@ ol, ul, li {
 }
 
 .presentacion__titulo {
-    font-size: 3rem;
+    font-size: 1.4rem;
 }
 
 .presentacion__subtitulo {
-    font-size: 1.25rem;
+    font-size: 0.9rem;
 }
 
 .redes {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .sobre-mi {
@@ -333,4 +322,355 @@ ol, ul, li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    /*
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+    */
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    /*
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+    */
+
+    .cabecera {
+        padding: 30px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navegacion__lista {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .navegacion__elemento {
+        display: block;
+    }
+
+    .navegacion__elemento a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+    }
+    
+    .presentacion {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .presentacion__foto {
+        width: 100%; /* Permite que la imagen sea adaptable */
+        max-width: 400px; /* Limita el tamaño máximo */
+        height: auto;
+        aspect-ratio: 1 / 1; /* Garantiza que siempre sea cuadrada */
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    }
+    
+    .presentacion__contenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+    }
+    
+    .presentacion__titulo {
+        font-size: 3rem;
+    }
+    
+    .presentacion__subtitulo {
+        font-size: 1.25rem;
+    }
+    
+    .redes {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .sobre-mi {
+        background-color: var(--color-de-fondo);
+        padding: 30px 10%;
+    }
+    
+    .habilidades {
+        background-color: var(--color-de-fondo-menu);
+        padding: 30px 10%;
+    }
+    
+    .habilidades__titulo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .habilidades__lista {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .habilidades__elemento {
+        border: 2px solid #2E2E2E;
+        border-radius: 0.5rem;
+        width: 6rem;
+        height: 6rem;
+        padding: 1.25rem;
+        margin: 1.25rem 0;
+        gap: 0.5rem;
+        background-color: #F3F6F7;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex; /* Activar flexbox */
+        flex-direction: column; /* Apilar elementos verticalmente */
+        align-items: center; /* Centrar horizontalmente */
+        justify-content: center; /* Centrar verticalmente */
+    }
+    
+    .aficiones {
+        background-color: var(--color-de-fondo-menu);
+        padding: 30px 10%;
+    }
+    
+    .aficiones__titulo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .aficiones__lista {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .aficiones__elemento {
+        border: 2px solid #2E2E2E;
+        border-radius: 0.5rem;
+        width: 6rem;
+        height: 6rem;
+        padding: 1.25rem;
+        margin: 1.25rem 0;
+        gap: 0.5rem;
+        background-color: #F3F6F7;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex; /* Activar flexbox */
+        flex-direction: column; /* Apilar elementos verticalmente */
+        align-items: center; /* Centrar horizontalmente */
+        justify-content: center; /* Centrar verticalmente */
+    }
+    
+    .formacion {
+        background-color: var(--color-de-fondo);
+        padding: 30px 10%;
+    }
+    
+    .formacion__titulo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .formacion__lista {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .formacion__elemento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .formacion__icono {
+        width: 180px; /* Ancho fijo para todas las imágenes */
+        object-fit: cover; /* Ajusta la imagen para llenar el espacio respetando la proporción */
+    }
+    
+    .formacion__detalle {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .proyectos {
+        background-color: var(--color-de-fondo-menu);
+        padding: 30px 10%;
+    }
+    
+    .proyectos__titulo {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+    
+    .proyectos__contenedor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 25px;
+        gap: 2rem;
+    }
+    
+    .imagen__proyecto {
+        width: 100%; /* Permite que la imagen sea adaptable */
+        max-width: 800px; /* Limita el tamaño máximo */
+        height: auto;
+    }
+    
+    .proyectos__informacion {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .proyectos__nombre {
+        padding: 25px;
+    }
+    
+    .proyectos__botones {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .boton__repo {
+        font-size: 1.2rem; /* Tamaño del texto (ajusta según tu preferencia) */
+        padding: 1rem; /* Tamaño del botón: ajusta para hacerlo más grande o pequeño */
+        background-color: #ffffff; /* Fondo blanco */
+        color: #007BFF; /* Letras azules */
+        border: 2px solid #007BFF; /* Borde azul */
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+    
+    .boton__repo:hover {
+        background-color: #007BFF; /* Fondo azul al pasar el cursor */
+        color: #ffffff; /* Letras blancas al pasar el cursor */
+    }
+    
+    .boton__demo {
+        font-size: 1.2rem; /* Tamaño del texto (ajusta según tu preferencia) */
+        padding: 1rem; /* Tamaño del botón: ajusta para hacerlo más grande o pequeño */
+        background-color: #ffffff; /* Fondo blanco */
+        color: #007BFF; /* Letras azules */
+        border: 2px solid #007BFF; /* Borde azul */
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+    
+    .boton__demo:hover {
+        background-color: #007BFF; /* Fondo azul al pasar el cursor */
+        color: #ffffff; /* Letras blancas al pasar el cursor */
+    }
+    
+    .habilidades__icono {
+        height: 25px;
+    }
+    
+    .contacto {
+        background-color: var(--color-de-fondo);
+        padding: 30px 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6.5rem;
+        flex-wrap: wrap;
+    }
+    
+    .contacto__imagen {
+        /*max-width: 300px;*/
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .contacto__informacion {
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .contacto__titulo {
+        font-size: 2rem;
+    }
+    
+    .contacto__formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .contacto__campo {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .contacto__campo--textarea {
+        height: 100px;
+        resize: none;
+    }
+    
+    .contacto__boton {
+        padding: 10px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .contacto__boton:hover {
+        background-color: #0056b3;
+    }
+    
+    .footer {
+        background-color: var(--color-de-fondo-menu);
+        padding: 30px 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
