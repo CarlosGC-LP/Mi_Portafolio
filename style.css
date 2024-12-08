@@ -270,7 +270,7 @@ ol, ul, li {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 6.5rem;
     flex-wrap: wrap;
 }
 
@@ -295,5 +295,34 @@ ol, ul, li {
 .contacto__formulario {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
+}
+
+.contacto__campo {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contacto__campo--textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contacto__boton {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto__boton:hover {
+    background-color: #0056b3;
 }
