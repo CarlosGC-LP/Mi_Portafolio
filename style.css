@@ -167,6 +167,7 @@ ol, ul, li {
 .formacion__lista {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 4.5rem;
 }
 
