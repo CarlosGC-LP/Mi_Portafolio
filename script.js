@@ -3,9 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const nameField = form.querySelector('.contacto__campo[type="text"]');
     const emailField = form.querySelector('.contacto__campo[type="email"]');
     const subjectField = form.querySelector('.contacto__campo-asunto');
+    const messageField = form.querySelector('.contacto__campo-mensaje');
     const errorText = form.querySelector('.error-nombre');
     const emailErrorText = form.querySelector('.error-email');
     const subjectErrorText = form.querySelector('.error-asunto');
+    const messageErrorText = form.querySelector('.error-mensaje');
     
     const validateName = () => {
         const nameValue = nameField.value.trim();
@@ -56,12 +58,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    const validateMessage = () => {
+        const messageValue = messageField.value.trim();
+
+        if (messageValue === '') {
+            messageErrorText.textContent = 'El campo "Mensaje" no puede estar vacío.';
+            return false;
+        } else if (messageValue.length > 300) {
+            messageErrorText.textContent = 'El campo "Mensaje" no puede tener más de 300 caracteres.';
+            return false;
+        } else {
+            messageErrorText.textContent = '';
+            return true;
+        }
+    };
+
     form.addEventListener('submit', (e) => {
         const isNameValid = validateName();
         const isEmailValid = validateEmail();
         const isSubjectValid = validateSubject();
+        const isMessageValid = validateMessage();
 
-        if (!isNameValid || !isEmailValid || !isSubjectValid) {
+        if (!isNameValid || !isEmailValid || !isSubjectValid || !isMessageValid) {
             e.preventDefault(); // Evitar envío del formulario si hay errores
         }
     });
