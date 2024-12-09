@@ -1,11 +1,6 @@
 :root {
-    --color-de-fondo: #EAF2FD;
-    --color-de-fondo-menu: #F5F5F5;
-    /*--color-de-fondo: #90A9B0;*/
-    /*--color-de-fondo: #80b0bd;
-    --color-de-fondo-menu: #637077a2;*/
-    /*--color-de-fondo: #bed361;
-    --color-de-fondo-menu: #7cc7d3;*/
+    --color-de-fondo-primero: #DEE7E7;
+    --color-de-fondo-segundo: #F4FAFF;
     --color-de-link: #000000;
 }   
 
@@ -30,7 +25,7 @@ ol, ul, li {
 
 /* Cabecera */
 .cabecera {
-    background-color: var(--color-de-fondo-menu);
+    background-color: var(--color-de-fondo-segundo);
     padding: 25px 10%;
 }
 
@@ -43,7 +38,7 @@ ol, ul, li {
 }
 
 .presentacion {
-    background-color: var(--color-de-fondo-menu);
+    background-color: var(--color-de-fondo-segundo);
     padding: 30px 10%;
 }
 
@@ -78,12 +73,12 @@ ol, ul, li {
 }
 
 .sobre-mi {
-    background-color: var(--color-de-fondo);
+    background-color: var(--color-de-fondo-primero);
     padding: 30px 10%;
 }
 
 .habilidades {
-    background-color: var(--color-de-fondo-menu);
+    background-color: var(--color-de-fondo-segundo);
     padding: 30px 10%;
 }
 
@@ -121,7 +116,7 @@ ol, ul, li {
 }
 
 .aficiones {
-    background-color: var(--color-de-fondo-menu);
+    background-color: var(--color-de-fondo-segundo);
     padding: 30px 10%;
 }
 
@@ -155,7 +150,7 @@ ol, ul, li {
 }
 
 .formacion {
-    background-color: var(--color-de-fondo);
+    background-color: var(--color-de-fondo-primero);
     padding: 30px 10%;
 }
 
@@ -189,7 +184,7 @@ ol, ul, li {
 }
 
 .proyectos {
-    background-color: var(--color-de-fondo-menu);
+    background-color: var(--color-de-fondo-segundo);
     padding: 30px 10%;
 }
 
@@ -263,7 +258,7 @@ ol, ul, li {
 }
 
 .contacto {
-    background-color: var(--color-de-fondo);
+    background-color: var(--color-de-fondo-primero);
     padding: 30px 10%;
     display: flex;
     align-items: center;
@@ -323,7 +318,7 @@ ol, ul, li {
 }
 
 .footer {
-    background-color: var(--color-de-fondo-menu);
+    background-color: var(--color-de-fondo-segundo);
     padding: 30px 10%;
     display: flex;
     justify-content: center;
@@ -499,7 +494,7 @@ ol, ul, li {
     }
     
     .sobre-mi {
-        background-color: var(--color-de-fondo);
+        background-color: var(--color-de-fondo-primero);
         padding: 30px 10%;
     }
     
@@ -566,7 +561,7 @@ ol, ul, li {
     }
     */
     .contacto {
-        background-color: var(--color-de-fondo);
+        background-color: var(--color-de-fondo-primero);
         padding: 30px 10%;
         display: flex;
         align-items: center;
