@@ -9,6 +9,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.4;
@@ -23,7 +27,6 @@ ol, ul, li {
     list-style: none;
 }
 
-/* Cabecera */
 .cabecera {
     background-color: var(--color-de-fondo-segundo);
     padding: 25px 10%;
@@ -43,13 +46,13 @@ ol, ul, li {
 }
 
 .presentacion__foto {
-    width: 100%; /* Permite que la imagen sea adaptable */
-    max-width: 350px; /* Limita el tamaño máximo */
+    width: 100%; 
+    max-width: 350px;
     height: auto;
-    aspect-ratio: 1 / 1; /* Garantiza que siempre sea cuadrada */
+    aspect-ratio: 1 / 1; 
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 
@@ -91,7 +94,7 @@ ol, ul, li {
     display: flex;
     justify-content: space-around;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* 2 columnas en móvil */
+    grid-template-columns: repeat(2, 1fr); 
     place-items: center;
 }
 
@@ -105,10 +108,10 @@ ol, ul, li {
     gap: 0.5rem;
     background-color: #F3F6F7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex; /* Activar flexbox */
-    flex-direction: column; /* Apilar elementos verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
 }
 
 .habilidades__icono {
@@ -129,7 +132,7 @@ ol, ul, li {
     display: flex;
     justify-content: space-around;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* 2 columnas en móvil */
+    grid-template-columns: repeat(2, 1fr); 
     place-items: center;
 }
 
@@ -143,10 +146,10 @@ ol, ul, li {
     gap: 0.5rem;
     background-color: #F3F6F7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex; /* Activar flexbox */
-    flex-direction: column; /* Apilar elementos verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
 }
 
 .formacion {
@@ -174,8 +177,8 @@ ol, ul, li {
 }
 
 .formacion__icono {
-    width: 180px; /* Ancho fijo para todas las imágenes */
-    object-fit: cover; /* Ajusta la imagen para llenar el espacio respetando la proporción */
+    width: 180px;
+    object-fit: cover;
 }
 
 .formacion__detalle {
@@ -203,8 +206,8 @@ ol, ul, li {
 }
 
 .imagen__proyecto {
-    width: 100%; /* Permite que la imagen sea adaptable */
-    max-width: 800px; /* Limita el tamaño máximo */
+    width: 100%; 
+    max-width: 800px; 
     height: auto;
     order: 1;
 }
@@ -226,35 +229,35 @@ ol, ul, li {
 }
 
 .boton__repo {
-    font-size: 1.2rem; /* Tamaño del texto (ajusta según tu preferencia) */
-    padding: 1rem; /* Tamaño del botón: ajusta para hacerlo más grande o pequeño */
-    background-color: #ffffff; /* Fondo blanco */
-    color: #007BFF; /* Letras azules */
-    border: 2px solid #007BFF; /* Borde azul */
+    font-size: 1.2rem;
+    padding: 1rem; 
+    background-color: #ffffff; 
+    color: #007BFF; 
+    border: 2px solid #007BFF;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .boton__repo:hover {
-    background-color: #007BFF; /* Fondo azul al pasar el cursor */
-    color: #ffffff; /* Letras blancas al pasar el cursor */
+    background-color: #007BFF;
+    color: #ffffff;
 }
 
 .boton__demo {
-    font-size: 1.2rem; /* Tamaño del texto (ajusta según tu preferencia) */
-    padding: 1rem; /* Tamaño del botón: ajusta para hacerlo más grande o pequeño */
-    background-color: #ffffff; /* Fondo blanco */
-    color: #007BFF; /* Letras azules */
-    border: 2px solid #007BFF; /* Borde azul */
+    font-size: 1.2rem; 
+    padding: 1rem; 
+    background-color: #ffffff;
+    color: #007BFF; 
+    border: 2px solid #007BFF; 
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .boton__demo:hover {
-    background-color: #007BFF; /* Fondo azul al pasar el cursor */
-    color: #ffffff; /* Letras blancas al pasar el cursor */
+    background-color: #007BFF; 
+    color: #ffffff;
 }
 
 .contacto {
@@ -329,36 +332,7 @@ ol, ul, li {
     font-size: 0.87rem;
 }
 
-/* ------------------------------ Responsividad ---------------------------------------*/
-
-/* Tablets y pantallas más grandes */
 @media (min-width: 768px) {
-    /*
-    .cabecera {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .cabecera__logo {
-        max-width: 100px;
-    }
-
-    .cabecera__titulo {
-        font-size: 1.5rem;
-    }
-
-    .navegacion__lista {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
-    }
-
-    .navegacion__elemento a {
-        font-size: 1rem;
-    }
-    */
     .presentacion {
         display: flex;
         flex-direction: row-reverse;
@@ -367,13 +341,13 @@ ol, ul, li {
     }
 
     .presentacion__foto {
-        width: 100%; /* Permite que la imagen sea adaptable */
-        max-width: 210px; /* Limita el tamaño máximo */
+        width: 100%; 
+        max-width: 210px; 
         height: auto;
-        aspect-ratio: 1 / 1; /* Garantiza que siempre sea cuadrada */
+        aspect-ratio: 1 / 1; 
         border-radius: 50%;
         object-fit: cover;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .presentacion__titulo {
@@ -389,18 +363,18 @@ ol, ul, li {
     }
 
     .habilidades__lista {
-        grid-template-columns: repeat(3, 1fr);  /* 2 columnas en móvil */
+        grid-template-columns: repeat(3, 1fr); 
     }
 
     .habilidades__elemento {
-        display: flex; /* Activar flexbox */
-        flex-direction: column; /* Apilar elementos verticalmente */
-        align-items: center; /* Centrar horizontalmente */
-        justify-content: center; /* Centrar verticalmente */
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
     }
 
     .aficiones__lista {
-        grid-template-columns: repeat(3, 1fr);  /* 2 columnas en móvil */
+        grid-template-columns: repeat(3, 1fr); 
         place-items: center;
     }
 
@@ -416,7 +390,7 @@ ol, ul, li {
     }
 
     .formacion__icono {
-        width: 150px; /* Ancho fijo para todas las imágenes */
+        width: 150px; 
     }
 
     .formacion__nombre {
@@ -424,19 +398,7 @@ ol, ul, li {
     }
 }
 
-/* Pantallas grandes */
 @media (min-width: 1024px) {
-    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
-    /*
-    .cabecera__titulo {
-        font-size: 1.8rem;
-    }
-
-    .navegacion__elemento a {
-        font-size: 1.1rem;
-    }
-    */
-
     .cabecera {
         padding: 30px 10%;
         display: flex;
@@ -467,13 +429,13 @@ ol, ul, li {
     }
     
     .presentacion__foto {
-        width: 100%; /* Permite que la imagen sea adaptable */
-        max-width: 400px; /* Limita el tamaño máximo */
+        width: 100%; 
+        max-width: 400px; 
         height: auto;
-        aspect-ratio: 1 / 1; /* Garantiza que siempre sea cuadrada */
+        aspect-ratio: 1 / 1; 
         border-radius: 50%;
         object-fit: cover;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     
     .presentacion__contenedor {
@@ -519,8 +481,8 @@ ol, ul, li {
     }
     
     .imagen__proyecto {
-        width: 100%; /* Permite que la imagen sea adaptable */
-        max-width: 600px; /* Limita el tamaño máximo */
+        width: 100%; 
+        max-width: 600px; 
         height: auto;
     }
     
@@ -540,26 +502,21 @@ ol, ul, li {
     }
     
     .proyectos__contenedor:nth-child(odd) .proyectos_imagen {
-        order: 2; /* En las filas impares, la imagen estará a la izquierda */
+        order: 2; 
     }
 
     .proyectos__contenedor:nth-child(odd) .proyectos__informacion {
-        order: 1; /* La información estará a la derecha */
+        order: 1; 
     }
 
     .proyectos__contenedor:nth-child(even) .proyectos_imagen {
-        order: 1; /* En las filas pares, la imagen estará a la derecha */
+        order: 1; 
     }
 
     .proyectos__contenedor:nth-child(even) .proyectos__informacion {
-        order: 2; /* La información estará a la izquierda */
+        order: 2;
     }
-    /*
-    .boton__repo,
-    .boton__demo {
-        font-size: 1rem;
-    }
-    */
+
     .contacto {
         background-color: var(--color-de-fondo-primero);
         padding: 30px 10%;
