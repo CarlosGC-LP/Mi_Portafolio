@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.contacto__formulario');
     const nameField = form.querySelector('.contacto__campo[type="text"]');
     const emailField = form.querySelector('.contacto__campo[type="email"]');
-    const subjectField = form.querySelector('.contacto__campo[type="text"]:nth-of-type(2)');
+    const subjectField = form.querySelector('.contacto__campo-asunto');
     const errorText = form.querySelector('.error-nombre');
     const emailErrorText = form.querySelector('.error-email');
     const subjectErrorText = form.querySelector('.error-asunto');
@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return false;
         }
 
-        // Expresión regular para validar formato de correo electrónico
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (!emailRegex.test(emailValue)) {
