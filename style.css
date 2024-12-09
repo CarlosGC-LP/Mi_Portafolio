@@ -97,6 +97,7 @@ ol, ul, li {
     justify-content: space-around;
     display: grid;
     grid-template-columns: repeat(2, 1fr);  /* 2 columnas en móvil */
+    place-items: center;
 }
 
 .habilidades__elemento {
@@ -134,6 +135,7 @@ ol, ul, li {
     justify-content: space-around;
     display: grid;
     grid-template-columns: repeat(2, 1fr);  /* 2 columnas en móvil */
+    place-items: center;
 }
 
 .aficiones__elemento {
@@ -266,7 +268,6 @@ ol, ul, li {
     align-items: center;
     justify-content: center;
     gap: 6.5rem;
-    flex-wrap: wrap;
 }
 
 .contacto__imagen {
@@ -328,6 +329,10 @@ ol, ul, li {
     align-items: center;
 }
 
+.footer__texto {
+    font-size: 0.87rem;
+}
+
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */
@@ -358,6 +363,69 @@ ol, ul, li {
         font-size: 1rem;
     }
     */
+    .presentacion {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .presentacion__foto {
+        width: 100%; /* Permite que la imagen sea adaptable */
+        max-width: 210px; /* Limita el tamaño máximo */
+        height: auto;
+        aspect-ratio: 1 / 1; /* Garantiza que siempre sea cuadrada */
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    }
+
+    .presentacion__titulo {
+        font-size: 2rem;
+    }
+    
+    .presentacion__subtitulo {
+        font-size: 1rem;
+    }
+
+    .habilidades {
+        padding: 30px 10%;
+    }
+
+    .habilidades__lista {
+        grid-template-columns: repeat(3, 1fr);  /* 2 columnas en móvil */
+    }
+
+    .habilidades__elemento {
+        display: flex; /* Activar flexbox */
+        flex-direction: column; /* Apilar elementos verticalmente */
+        align-items: center; /* Centrar horizontalmente */
+        justify-content: center; /* Centrar verticalmente */
+    }
+
+    .aficiones__lista {
+        grid-template-columns: repeat(3, 1fr);  /* 2 columnas en móvil */
+        place-items: center;
+    }
+
+    .formacion__lista {
+        flex-direction: row;
+        gap: 4.5rem;
+    }
+
+    .formacion__elemento {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formacion__icono {
+        width: 150px; /* Ancho fijo para todas las imágenes */
+    }
+
+    .formacion__nombre {
+        font-size: 0.97rem;
+    }
 }
 
 /* Pantallas grandes */
@@ -452,12 +520,11 @@ ol, ul, li {
     .proyectos__contenedor {
         flex-direction: row;
         padding: 25px;
-        gap: 1.5rem;
     }
     
     .imagen__proyecto {
         width: 100%; /* Permite que la imagen sea adaptable */
-        max-width: 800px; /* Limita el tamaño máximo */
+        max-width: 600px; /* Limita el tamaño máximo */
         height: auto;
     }
     
@@ -491,7 +558,12 @@ ol, ul, li {
     .proyectos__contenedor:nth-child(even) .proyectos__informacion {
         order: 2; /* La información estará a la izquierda */
     }
-    
+    /*
+    .boton__repo,
+    .boton__demo {
+        font-size: 1rem;
+    }
+    */
     .contacto {
         background-color: var(--color-de-fondo);
         padding: 30px 10%;
@@ -499,13 +571,17 @@ ol, ul, li {
         align-items: center;
         justify-content: center;
         gap: 6.5rem;
-        flex-wrap: wrap;
+        flex-direction: row;
     }
     
     .contacto__imagen {
         display: block;
-        /*max-width: 300px;*/
+        max-width: 360px;
         height: auto;
         border-radius: 8px;
+    }
+
+    .footer__texto {
+        font-size: 1.25rem;
     }
 }
