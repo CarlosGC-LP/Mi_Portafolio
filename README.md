@@ -24,3 +24,5 @@ Bienvenido a mi portafolio personal. Este proyecto es una página web diseñada 
 
 ## 🖼️ Vista Previa
 ![Página Principal](./assets/vista1.JPG)
+
+Hecho con ❤️ por Carlos Alberto Gonzalez Custodio
