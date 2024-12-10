@@ -4,10 +4,10 @@ Bienvenido a mi portafolio personal. Este proyecto es una página web diseñada 
 
 ## 📋 Tabla de Contenidos
 - Presentación
-- [Tabla de contenidos](#tabla-de-contenidos)   
-- [Características](#características)  
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)   
-- [Vista Previa](#vista-previa)  
+- Tabla de contenidos  
+- Características
+- Tecnologías Utilizadas  
+- Vista Previa 
 
 ## ✨ Características  
 - Navegación intuitiva con enlaces hacia secciones clave.  
