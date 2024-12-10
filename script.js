@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             errorText.textContent = 'El campo "Nombre" no puede tener más de 50 caracteres.';
             return false;
         } else {
-            errorText.textContent = ''; // Limpiar error si todo está bien
+            errorText.textContent = '';
             return true;
         }
     };
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const isMessageValid = validateMessage();
 
         if (!isNameValid || !isEmailValid || !isSubjectValid || !isMessageValid) {
-            e.preventDefault(); // Evitar envío del formulario si hay errores
+            e.preventDefault(); 
         }
     });
 });
