@@ -2,14 +2,12 @@
 
 Bienvenido a mi portafolio personal. Este proyecto es una página web diseñada para mostrar información sobre mi trayectoria profesional, habilidades, aficiones, formación y proyectos.  
 
-## 📋 Tabla de Contenidos  
+## 📋 Tabla de Contenidos
+- [Presentacion]
+- [Tabla de contenidos](#tabla-de-contenidos)   
 - [Características](#características)  
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)  
-- [Estructura del Proyecto](#estructura-del-proyecto)  
-- [Instrucciones para el Uso](#instrucciones-para-el-uso)  
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)   
 - [Vista Previa](#vista-previa)  
-- [Contribuciones](#contribuciones)  
-- [Licencia](#licencia)  
 
 ## ✨ Características  
 - Navegación intuitiva con enlaces hacia secciones clave.  
