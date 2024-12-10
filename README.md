@@ -14,10 +14,12 @@ Bienvenido a mi portafolio personal. Este proyecto es una página web diseñada 
 ## ✨ Características  
 - Navegación intuitiva con enlaces hacia secciones clave.  
 - Animaciones suaves al desplazarse hacia secciones específicas.  
-- Diseño adaptable para pantallas de escritorio y dispositivos móviles.  
+- Diseño adaptable para pantallas de escritorio, tablet y dispositivos móviles.  
 - Código modular y organizado para facilitar la personalización.  
 
 ## 💻 Tecnologías Utilizadas  
-- **HTML5**: Para la estructura de la página.  
-- **CSS3**: Para los estilos y la transición suave en la navegación.  
+- **HTML**: Para la estructura de la página.  
+- **CSS**: Para los estilos y la transición suave en la navegación.  
 - **JavaScript**: Para agregar interactividad avanzada.  
+
+## 🖼️ Vista Previa
