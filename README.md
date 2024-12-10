@@ -23,3 +23,4 @@ Bienvenido a mi portafolio personal. Este proyecto es una página web diseñada 
 - **JavaScript**: Para agregar interactividad avanzada.  
 
 ## 🖼️ Vista Previa
+![Página Principal](./assets/vista1.JPG)
