@@ -209,15 +209,19 @@
             <p class="contacto__descripcion">
                 ¿Quieres contactarme? Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.
             </p>
-            <form class="contacto__formulario">
-                <input class="contacto__campo" type="text" placeholder="Nombre">
+            <form action="https://formspree.io/f/mwpkdenv" method="POST" class="contacto__formulario">
+                <input class="contacto__campo" type="text" name="name" placeholder="Nombre" required>
                 <p class="error-nombre" style="color: red; font-size: 0.9rem;"></p>
-                <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
+                
+                <input class="contacto__campo" type="email" name="email" placeholder="Correo Electrónico" required>
                 <p class="error-email" style="color: red; font-size: 0.9rem;"></p>
-                <input class="contacto__campo contacto__campo-asunto" type="text" placeholder="Asunto">
+                
+                <input class="contacto__campo contacto__campo-asunto" type="text" name="subject" placeholder="Asunto" required>
                 <p class="error-asunto" style="color: red; font-size: 0.9rem;"></p>
-                <textarea class="contacto__campo contacto__campo--textarea contacto__campo-mensaje" placeholder="Mensaje"></textarea>
+                
+                <textarea class="contacto__campo contacto__campo--textarea contacto__campo-mensaje" name="message" placeholder="Mensaje" required></textarea>
                 <p class="error-mensaje" style="color: red; font-size: 0.9rem;"></p>
+                
                 <button class="contacto__boton" type="submit">Enviar</button>
             </form>
         </div>
